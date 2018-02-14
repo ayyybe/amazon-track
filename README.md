@@ -1,7 +1,7 @@
 # amazon-track
 ##### A (currently proof-of-concept) library that gets tracking data for shipped Amazon.com orders.
 ---
-<sub><sup>Mainly intended for Amazon-sourcing dropshippers wanting to provide trackable info on AMZL/TBA orders, either for letting buyers track their orders, or for a better chance at winning unreceived item cases.</sub></sup>
+Mainly intended for Amazon-sourcing dropshippers wanting to provide trackable info on AMZL/TBA orders, either for letting buyers track their orders, or for a better chance at winning unreceived item cases.
 
 ---
 #### WARNING!
@@ -37,14 +37,15 @@ track('my@email.com', 'amazon/p@ssword', '113-9830073-7117051)
         console.log(rej);
     });
 ```
+```
 { primaryStatus: 'Delivered Friday, February 9',                                           
   secondaryStatus: 'Your package was delivered.',                                          
   milestoneMessage: 'Delivered',                                                           
   exceptionSource: false,                                                                  
   exceptionExplanation: false,                                                             
   deliveredAddress:                                                                        
-   [ 'Ute Puschmann',                                                                      
-     '5898 BAY PINES LAKES BLVD',                                                          
+   [ 'Firstname Lastname',                                                                      
+     '1234 SESAME STREET',                                                          
      'SAINT PETERSBURG, FL 33708-3528' ],                                                  
   deliveryPhoto: 'https://us-prod-temp.s3.amazonaws.com/imageId-b4b0be08-baa1-7034-14eb-0ca
 ee635492a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20180214T080911Z&X-Amz-SignedHeaders=
@@ -71,8 +72,4 @@ host&X-Amz-Expires=575448&X-Amz-Credential=AKIAJN5NBKN7JMHVQ27Q%2F20180214%2Fus-
 
 
 RUNTIME: 3.185s                                                                            
-```
-{
-
-}
 ```
