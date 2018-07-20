@@ -1,7 +1,8 @@
 {
   "name": "amazon-track",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides a simple API to track shipped Amazon.com orders. Useful for orders shipped with Amazon Logistics (TBA), since Amazon hasn't made tracking for these shipments publicly available",
+  "homepage": "https://github.com/Poootaatoooo/amazon-track",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
@@ -9,7 +10,7 @@
   "author": "Poootaatoooo",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "request": "^2.83.0",
+    "request": "^2.87.0",
     "request-promise": "^4.2.2"
   }
 }
