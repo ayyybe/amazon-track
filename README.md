@@ -1,10 +1,15 @@
 # amazon-track
 
+>#### ⚠️ This project is not currently maintained. Login may/may not work. No errors are produced if sign-in fails, but Amazon should return most tracking info even if you're logged out (AFAIK the only excluded info is delivery name/address and delivery photo if applicable). It's also worth mentioning that this library wasn't set up to deal with orders with multiple shipments (I believe orders with multiple items are fine, as long as they were all shipped in one package).
+
 ##### A (currently proof-of-concept) library that gets tracking data for shipped Amazon.com orders.
+
+[![npm](https://img.shields.io/npm/v/amazon-track.svg)](https://www.npmjs.com/package/amazon-track)
 
 ---
 
-##### [My demo app](https://lgtr.herokuapp.com) consists of a react.js frontend and an express + mongodb api which utilizes this library and employs a 30-minute cache for each order. The first time an order is processed through the app, the amazon order id must be used (eg. 113-4758617-1911455). After that,
+~~##### [My demo app](https://lgtr.herokuapp.com) consists of a react.js frontend and an express + mongodb api which utilizes this library and employs a 30-minute cache for each order. The first time an order is processed through the app, the amazon order id must be used (eg. 113-4758617-1911455). After that, the order details can be looked up using the order id or the tracking number.~~
+Demo app is down for now.
 
 ---
 
@@ -14,13 +19,7 @@ Mainly intended for Amazon-sourcing dropshippers wanting to provide trackable in
 
 #### Notice
 
-There's no captcha solution like deathbycaptcha or endcaptcha implemented yet, and this project most likely won't be maintained any further than it currently is.
-
-Login will silently fail if Amazon prompts with a captcha or if the email/pword combo is incorrect.
-
-**_Even without being logged in_** Amazon still let's you track orders. The only difference is that you won't be able to see the delivery address (as of right now Amazon returns `['Amazon Customer']`), and you also won't be able to get a delivery photo, even if available.
-
-## Also, this library can only track single shipment orders. It's not currently equipped to provide tracking for multiple shipments (ie. if half the items come from a different warehouse).
+There's no captcha solution like deathbycaptcha or 2captcha implemented yet for login, and this project most likely won't be maintained any further than it currently is. Read the stuff on the first line for information about the state of this project.
 
 _For ease and simplicity, orders are tracked by their 17-digit Amazon order number, not the tracking number._
 
