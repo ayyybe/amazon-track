@@ -1,4 +1,7 @@
 # amazon-track
+>#### ❌ Don't use this, or even base any code off of any part of this project.
+
+---
 
 >#### ⚠️ This project is not currently maintained. Login may/may not work. No errors are produced if sign-in fails, but Amazon should return most tracking info even if you're logged out (AFAIK the only excluded info is delivery name/address and delivery photo if applicable). It's also worth mentioning that this library wasn't set up to deal with orders with multiple shipments (I believe orders with multiple items are fine, as long as they were all shipped in one package).
 
